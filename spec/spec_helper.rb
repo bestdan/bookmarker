@@ -92,3 +92,9 @@ RSpec.configure do |config|
   Kernel.srand config.seed
 =end
 end
+
+require_relative 'support/json_helpers'
+RSpec.configure do |config|
+  config.include JsonHelpers
+  # ...
+end
